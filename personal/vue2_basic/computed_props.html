@@ -23,7 +23,14 @@
                     reversedMessage: function() {
                         return this.message.split('').reverse().join('')
                     }
-                }
+                },
+                // methods: {  // methods can be used to achieve the same effect, 
+                // difference is that computed properties are cached based on their dependencies 
+                // (if the dependencies don't change, the computed property won't re-evaluate),
+                //   reversedMessage: function() {
+                //     return this.message.split('').reverse().join('')
+                //   }
+                // }
             })
         </script>
 
